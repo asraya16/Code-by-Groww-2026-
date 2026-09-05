@@ -152,7 +152,7 @@ router.post(
           },
 
           {
-            new: true,
+            returnDocument: "after",
             upsert: true
           }
         );

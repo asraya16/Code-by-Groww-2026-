@@ -52,7 +52,7 @@ router.post("/:userId", async (req, res) => {
     const item = await Watchlist.findOneAndUpdate(
       { userId, symbol: symbol.toUpperCase() },
       { userId, symbol: symbol.toUpperCase() },
-      { new: true, upsert: true }
+      { returnDocument: "after", upsert: true }
     );
 
     res.json({ message: "Stock added to watchlist", item });
