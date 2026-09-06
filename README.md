@@ -1,1 +1,3 @@
-# Code-by-Groww-2026-
+Most of the watchlists show every price tick or flag change with a percentage. This watchlist can be noisy for stocks and stay steady, also unfair when stock is volatile.
+In 72 hours I created a watchlist using MongoDB, Express and React that compares each stock to the price the last actually looked at. Then it rates how important that move is compared to stock's volatility limit.
+A 1% rise matters to HDFC Bank but it is less important for Zomato. Assets old price is flagged not hidden. All the scoring rules are in the backend so every client sees the reliable results. 
